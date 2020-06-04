@@ -16,12 +16,7 @@ Para relizar el proceso de multiprocessing se realizo lo siguiente:
  * Cotinuando con eso procedemos a cambiar el inicio por el salto y sumamos el salto más lo que debamos sumar para alcanzar el rango final
  * por ultimo en resultPar sumamos el lo que tenga la variable resultado(es lo que se retorno del método paralelo)
  * Un dato interesante es que este multiproceso trabajo bien con número de procesadores menores al número de procesadores totales que tiene la máquina, es decir que si mi máquina tiene 4 nucleos, este algoritmo trabaja bien cuando uso el multiproceso con nucles menores a 3, es decir, que cuando uso el multiprocessing con 4 nucleos, el tiempo aumenta, mientras que cuando uso con 4 o menos, el tiempo disminuye, esto hablando al momento de realizar los lotes, ya que el multiproceso dentro del for del lote trabajo con los 4 nucleos.
- 
-## Resultados
 
-
-
- 
 ## MPI
 
 Para realizar el proceso de MPI se realizo lo siguiente:
@@ -37,5 +32,8 @@ Para realizar el proceso de MPI se realizo lo siguiente:
  * Pasamos a los trabajadores, ellos seran los encargados de recivir los valores del maestro para eso esta un if en donde si el rank ya no es 0 entonces pues que reciva los valores del maestro y haga el proceso para calcular el máximo, después mando de la misma manera  el offset, rows y ahora solo mando el countValue que es el conteo de valores del maximo y otra cosa más, también se cambia el mtype ya que son trabajadores ahora.
  * Por ultimo los trabajadores reciben los resultados y solamente suman a la variable resultPar
  
+  
+## Resultados
+
  
  
