@@ -34,6 +34,8 @@ Para realizar el proceso de MPI se realizo lo siguiente:
  
   
 ## Resultados
+![Alt text](procesos.png?raw=true "Procesos")
 
+![Alt text](mpi.png?raw=true "Procesos")
  
  
