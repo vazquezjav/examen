@@ -18,7 +18,7 @@ Para relizar el proceso de multiprocessing se realizo lo siguiente:
  * Un dato interesante es que este multiproceso trabajo bien con número de procesadores menores al número de procesadores totales que tiene la máquina, es decir que si mi máquina tiene 4 nucleos, este algoritmo trabaja bien cuando uso el multiproceso con nucles menores a 3, es decir, que cuando uso el multiprocessing con 4 nucleos, el tiempo aumenta, mientras que cuando uso con 4 o menos, el tiempo disminuye, esto hablando al momento de realizar los lotes, ya que el multiproceso dentro del for del lote trabajo con los 4 nucleos.
 
 ## MPI
-**Comando :** mpiexec -n 8 python3 VegaMoreno_Bryam_ExamenMultiprocessing.py 
+**Comando :** mpiexec -n 8 python3 VegaMoreno_Bryam_MPI.py 
 
 Para realizar el proceso de MPI se realizo lo siguiente:
  * Se realizo de la misma manera que en el trabajo anterior de multiplicación de matrices
