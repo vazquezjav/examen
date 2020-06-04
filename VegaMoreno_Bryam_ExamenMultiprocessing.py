@@ -59,7 +59,7 @@ if __name__ == '__main__':
     inicioPar = time.time()   
     inicio = 0
     salto = 10000000
-    for i in range(multiprocessing.cpu_count()): 
+    for i in range(3): 
         respuesta= multiprocessing.Value("i", 0)
         process = multiprocessing.Process(target=how_many_max_values_parallel,args = (ar[inicio:salto],))
         process.start()

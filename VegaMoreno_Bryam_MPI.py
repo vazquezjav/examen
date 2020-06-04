@@ -42,7 +42,6 @@ if __name__ == '__main__':
     comm = MPI.COMM_WORLD
     numtasks = comm.size
     rank = comm.Get_rank()
-    print(rank)
 
     numworkers = numtasks-1
     
